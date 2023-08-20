@@ -31,6 +31,9 @@ ul{
     overflow: hidden;
     background-color: hsl(0, 0%, 4%);
     padding: 16px;
+    display: flex;
+    justify-content: center;
+    
 }
 
 li{
@@ -43,6 +46,7 @@ li{
     color: #fff;
     text-align: center;
     text-decoration: none;
+    border-radius: 80px;
     }
     
     li a:hover:not(.active){
@@ -102,13 +106,15 @@ li{
 
         ul{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-evenly;
         }
         
         table{
             border: 1px solid #000;
             font-size: 0.9rem;
         }
+
+        li a{
+            font-size: 14px;
+         }
     }
