@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="guitarra-acustica.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>The guitar Instrument</title>
+  </head>
+  <body>
+    <header>
+      <h1>The Guitar Instrument</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="preference.html">Preference</a></li>
+          <li><a href="audiovisuals.html">Audiovisuals</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div>
+      <form class="form">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Type your name here"
+          required
+          minlength="3"
+        />
+        <label for="surname">Surname:</label>
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          placeholder="Type your surname here"
+          required
+          minlength="3"
+        />
+        <label for="mail">Email:</label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="Type your email here"
+          required
+        />
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="Argetina">Argetina</option>
+          <option value="Venezuela">Venezuela</option>
+          <option value="Brazil">Brazil</option>
+          <option value="United States">United States</option>
+          <option value="Germany">Germany</option>
+          <option value="Australia">Australia</option>
+          <option value="England">England</option>
+          <option value="Canada">Canada</option>
+          <option value="Dominican Republic">Dominican Republic</option>
+          <option value="Colombia">Colombia</option>
+        </select>
+        <label for="comment">Comment: </label>
+        <textarea
+          name="comment"
+          id="comment"
+          placeholder="Type your comment here"
+        ></textarea>
+
+        <label class="reason" for="reason"><strong>Reason to get in touch:</strong> </label><br>
+        <input class="type" type="radio" id="reason" name="reason" /><i>I'm fan</i><br>
+        <input class="type" type="radio" id="reason" name="reason" /><i>I want to learn how to play guitar</i><br>
+        <input class="type" type="radio" id="reason" name="reason" /><i>Commercial</i><br>
+        <input class="type" type="radio" id="reason" name="reason" /><i>Complain</i>
+
+        <input type="submit" value="Send" />
+      </form>
+    </div>
+
+    <footer class="footer">
+      <p>Copyright &copy; 2023</p>
+    </footer>
+  </body>
+</html>
