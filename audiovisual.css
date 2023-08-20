@@ -6,6 +6,9 @@ body{
     background:linear-gradient(to right, rgb(212, 135, 19), #f54639);
     padding: 0;
     margin: 0;
+    position: relative;
+    padding-bottom: 6em;
+    min-height: 100vh;
 }
 
 
@@ -102,6 +105,9 @@ div.pic img:hover{
         padding: 10px;
         text-align: center;
         clear: both;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
     }
 
     @media (max-width: 600px){
